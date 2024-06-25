@@ -1,6 +1,23 @@
 zsh
 starship
 
+```
+Details:
+
+OS: Arch Linux
+
+WM: dwm
+
+Shell: zsh
+
+Terminal: alacritty
+
+Editor: neovim
+
+Theme: rose-pine
+```
+
+
 ## DWM
 
 Installed Patches
