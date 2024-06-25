@@ -16,7 +16,7 @@ Theme: rose-pine
 ```
 
 
-## DWM
+## dwm
 
 Installed Patches
 
@@ -36,6 +36,18 @@ Installed Patches
 - swallow
 - systray
 - warp
+
+## dmenu
+
+Installed Patches
+
+- border
+- caseinsensitive
+- center
+- fuzzyhighlight
+- fuzzymatch
+- highpriority
+- numbers
 
 ## zsh
 
