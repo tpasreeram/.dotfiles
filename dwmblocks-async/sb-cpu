@@ -1,0 +1,14 @@
+#!/bin/sh
+
+df_check_location='/home'
+
+sb_cpu() {
+	US=$(top -bn1 | grep Cpu | awk '{print $2}')
+	SY=$(top -bn1 | grep Cpu | awk '{print $4}')
+	NI=$(top -bn1 | grep Cpu | awk '{print $6}')
+	HI=$(top -bn1 | grep Cpu | awk '{print $12}')
+	CPU=$(echo $US $SY $NI $HI | awk '{print $1 + $2 + $3 + $4}')%
+	printf "CPU: %s\n" "$CPU"
+}
+
+sb_cpu

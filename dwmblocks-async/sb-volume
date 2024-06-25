@@ -1,0 +1,25 @@
+#!/bin/sh
+
+#vol=$(pulsemixer --get-volume | awk '{print $2}')
+#mute=$(pulsemixer --get-mute)
+#printf "%s%s%%\n" "VOL: " "$vol"
+
+get_volume(){
+        curStatus=$(pulsemixer --get-mute)
+        volume=$(pulsemixer --get-volume |  awk '{print $2}')
+
+        if [ "${curStatus}" = "1" ]
+        then
+		echo "󰖁 $volume%"
+        else
+                if [[ $volume -lt 25 ]]; then
+                        echo "󰕿 $volume%"
+                elif [[ $volume -ge 25 && $volume -lt 75 ]]; then
+                        echo "󰖀 $volume%"
+                elif [[ $volume -ge 75 ]]; then
+                        echo "󰕾 $volume%"
+                fi
+        fi
+}
+
+get_volume

@@ -1,0 +1,22 @@
+#!/bin/sh
+
+dwm_brightness() {
+    brightness=$(brightnessctl g)
+    max_brightness=$(brightnessctl m)
+    
+    # Using awk for floating-point arithmetic
+    brightness_percentage=$(awk -v b="$brightness" -v m="$max_brightness" 'BEGIN { printf "%.0f", (b / m) * 100 }')
+
+    if [ "$brightness_percentage" -lt 25 ]; then
+        icon="󰃞"
+    elif [ "$brightness_percentage" -lt 75 ] && [ "$brightness_percentage" -ge 25 ]; then
+        icon="󰃟"
+    elif [ "$brightness_percentage" -ge 75 ]; then
+        icon="󰃠"
+    fi
+    
+    printf "%s %s%%\n" "$icon" "$brightness_percentage"
+}
+
+dwm_brightness
+
