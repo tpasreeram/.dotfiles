@@ -1,6 +1,4 @@
-zsh
-starship
-
+# Arch linux config - sreer
 ```
 Details:
 
@@ -38,3 +36,7 @@ Installed Patches
 - swallow
 - systray
 - warp
+
+## zsh
+
+starship
