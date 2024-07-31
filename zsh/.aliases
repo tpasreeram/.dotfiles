@@ -7,6 +7,7 @@ alias cat="bat"
 alias du="dust"
 alias cd="z"
 # alias ls='ls --color=auto -a'
+alias mkdir='mkdir -vp'
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -iv'
