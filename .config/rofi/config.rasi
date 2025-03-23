@@ -149,3 +149,5 @@ configuration {
       sorting-method:    "name";
   }
 }
+
+@theme "/home/sreer/.local/share/rofi/themes/everforest.rasi"
