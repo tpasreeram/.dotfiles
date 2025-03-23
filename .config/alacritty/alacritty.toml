@@ -1,0 +1,29 @@
+import = ["/home/sreer/.config/alacritty/rose-pine.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[font.normal]
+family = "Noto Sans M Nerd Font Mono"
+style = "normal"
+
+[font]
+size = 10.0
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
+
+[window]
+opacity = 1.0
