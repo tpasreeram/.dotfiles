@@ -1,11 +1,11 @@
 configuration {
-/*	modes: "window,drun,run,ssh";*/
+	modes: "window,drun,run";
 /*	font: "mono 12";*/
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
 /*	fixed-num-lines: true;*/
-/*	show-icons: false;*/
+	show-icons: true;
 /*	terminal: "rofi-sensible-terminal";*/
 /*	ssh-client: "ssh";*/
 /*	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
@@ -18,7 +18,7 @@ configuration {
 /*	drun-match-fields: "name,generic,exec,categories,keywords";*/
 /*	drun-categories: ;*/
 /*	drun-show-actions: false;*/
-/*	drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";*/
+	drun-display-format: "{icon} {name}";
 /*	drun-url-launcher: "xdg-open";*/
 /*	disable-history: false;*/
 /*	ignored-prefixes: "";*/
@@ -56,11 +56,11 @@ configuration {
 /*	refilter-timeout-limit: 8192;*/
 /*	xserver-i300-workaround: false;*/
 /*	pid: "/run/user/1000/rofi.pid";*/
-/*	display-window: ;*/
+	display-window: "Windows:";
 /*	display-windowcd: ;*/
 /*	display-run: ;*/
 /*	display-ssh: ;*/
-/*	display-drun: ;*/
+	display-drun: "Applications:";
 /*	display-combi: ;*/
 /*	display-keys: ;*/
 /*	display-filebrowser: ;*/
