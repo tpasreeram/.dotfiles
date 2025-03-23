@@ -1,0 +1,12 @@
+XF86MonBrightnessUp
+	brightnessctl s +10% && kill -41 $(pidof dwmblocks)
+XF86MonBrightnessDown
+	brightnessctl s 10%- && kill -41 $(pidof dwmblocks)
+XF86AudioLowerVolume
+	pactl set-sink-mute @DEFAULT_SINK@ 0 && pactl set-sink-volume @DEFAULT_SINK@ -1% && kill -40 $(pidof dwmblocks)
+XF86AudioRaiseVolume
+	pactl set-sink-mute @DEFAULT_SINK@ 0 && pactl set-sink-volume @DEFAULT_SINK@ +1% && kill -40 $(pidof dwmblocks)
+XF86AudioMute
+	pactl set-sink-mute @DEFAULT_SINK@ toggle && kill -40 $(pidof dwmblocks)
+Print
+  flameshot screen -p ~/Pictures/Screenshots/
