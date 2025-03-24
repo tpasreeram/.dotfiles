@@ -1,6 +1,8 @@
 # References: Fernando Cejas (https://fernandocejas.com/blog/engineering/2022-03-30-arch-linux-system-maintance/)
 sudo -l
 
+sh timeslew.sh
+
 echo "----------------------------------------------------"
 echo "UPDATING SYSTEM"
 echo "----------------------------------------------------"
