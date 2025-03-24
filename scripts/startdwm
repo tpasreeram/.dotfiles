@@ -1,0 +1,25 @@
+#!/bin/sh
+
+xrandr --output eDP-1 --auto                                            # Monitor 1
+xrandr --output HDMI-A-1-0 --mode 1920x1080 --rate 75 --right-of eDP-1  # Monitor 2 (Right of Monitor 1)
+
+# Wallpaper
+feh --no-fehbg --bg-fill '/home/sreer/Pictures/suzume1920x1200.jpeg'
+
+xset s off -dpms
+
+picom &         # Compositor
+sxhkd &         # Keyboard Shortcuts
+dwmblocks &     # Status Bar
+dunst &         # Notification Manager
+fcitx5 &        # Input Method Framework
+flameshot &     # Screenshots
+# vesktop &       # Discord
+redshift-gtk &  # Redshift
+
+emacs --daemon  # Doom Emacs
+
+# DWM
+while true; do
+  dwm 2> ~/.dwm.log
+done
