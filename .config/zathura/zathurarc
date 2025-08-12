@@ -1,4 +1,3 @@
 include everforest
 
 set selection-clipboard clipboard
-set database-backend sqlite
